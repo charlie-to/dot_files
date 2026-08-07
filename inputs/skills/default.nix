@@ -36,6 +36,10 @@
         path = mattpocock;
         subdir = "skills/productivity";
       };
+      mattpocock-engineering = {
+        path = mattpocock;
+        subdir = "skills/engineering";
+      };
       karpathy = {
         path = karpathy;
         subdir = "skills";
@@ -52,9 +56,33 @@
       "web-design-guidelines"
       "react-view-transitions"
       "react-best-practices"
-      # mattpocock/skills
+      # mattpocock/skills - productivity
       "grill-me"
       "grilling"
+      "handoff"
+      "teach"
+      "to-questionnaire"
+      "wait-what"
+      "writing-for-agents"
+      # mattpocock/skills - engineering
+      "ask-matt"
+      "grill-with-docs"
+      "triage"
+      "improve-codebase-architecture"
+      "setup-matt-pocock-skills"
+      "to-spec"
+      "to-tickets"
+      "implement"
+      "wayfinder"
+      "prototype"
+      "diagnosing-bugs"
+      "research"
+      "tdd"
+      "domain-modeling"
+      "codebase-design"
+      "code-review"
+      "resolving-merge-conflicts"
+      "wizard"
       # forrestchang/andrej-karpathy-skills
       "karpathy-guidelines"
       "mermaid-architect"
