@@ -89,15 +89,15 @@
     ];
     targets = {
       claude = {
-        dest = ".claude/skills";
+        dest = "~/.claude/skills";
         structure = "copy-tree";
       };
       agents = {
-        dest = ".agents/skills";
+        dest = "~/.agents/skills";
         structure = "copy-tree";
       };
       bob = {
-        dest = ".bob/skills";
+        dest = "~/.bob/skills";
         structure = "copy-tree";
       };
     };
