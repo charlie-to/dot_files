@@ -96,6 +96,10 @@
         dest = ".agents/skills";
         structure = "copy-tree";
       };
+      bob = {
+        dest = ".bob/skills";
+        structure = "copy-tree";
+      };
     };
   };
 }
