@@ -81,4 +81,5 @@ in
     libgcc
   ];
   
+  nix.settings.fallback = true;
 }
