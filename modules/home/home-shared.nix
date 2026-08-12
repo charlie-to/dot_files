@@ -76,6 +76,9 @@
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.herdr
     inputs.takt.packages.${pkgs.stdenv.hostPlatform.system}.default
+
+    # diagram
+    d2
   ];
 
   home.sessionVariables = {
