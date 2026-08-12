@@ -92,6 +92,14 @@
         dest = "~/.claude/skills";
         structure = "copy-tree";
       };
+      claude-work = {
+        dest = "~/.claude-work/skills";
+        structure = "copy-tree";
+      };
+      claude-personal = {
+        dest = "~/.claude-personal/skills";
+        structure = "copy-tree";
+      };
       agents = {
         dest = "~/.agents/skills";
         structure = "copy-tree";
