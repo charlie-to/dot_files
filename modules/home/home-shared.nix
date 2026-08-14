@@ -45,6 +45,7 @@
     # data
     duckdb
     jq
+    lazysql
 
     # file/dir/utility
     bat
@@ -163,6 +164,13 @@
   };
 
   programs.fzf.enable = true;
+
+  programs.git = {
+    enable = true;
+    settings = {
+      init.defaultBranch = "main";
+    };
+  };
 
   programs.direnv = {
     enable = true;
