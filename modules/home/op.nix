@@ -2,7 +2,7 @@
 
 {
   # 1Password CLI wrapper for WSL2
-  home.file.".local/bin/op" = lib.mkIf pkgs.stdenv.isLinux {
+  home.file.".local/bin/op" = lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
     executable = true;
     text = ''
       #!/bin/bash

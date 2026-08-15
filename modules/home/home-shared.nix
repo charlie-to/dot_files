@@ -179,7 +179,7 @@
   };
 
   # only available on linux
-  services.ssh-agent.enable = pkgs.stdenv.isLinux;
+  services.ssh-agent.enable = pkgs.stdenv.hostPlatform.isLinux;
 
   home.file = {
     ".config/alacritty/alacritty.toml".source = ../../config/alacritty/alacritty.toml;
@@ -189,7 +189,7 @@
   };
 
   home.activation.claudeSettings = lib.hm.dag.entryAfter [ "writeBoundary" ] (
-    lib.optionalString pkgs.stdenv.isLinux ''
+    lib.optionalString pkgs.stdenv.hostPlatform.isLinux ''
       ANTHROPIC_AUTH_TOKEN=$("$HOME/.local/bin/op" read "op://Employee/ICA_API/credential" 2>/dev/null || echo "")
       mkdir -p "$HOME/.claude"
       ${pkgs.jq}/bin/jq --arg token "$ANTHROPIC_AUTH_TOKEN" \
